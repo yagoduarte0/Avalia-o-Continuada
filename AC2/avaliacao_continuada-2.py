@@ -4,7 +4,8 @@ Programacao Estruturada
 11/04/2024
 Yago Duarte de Andrade
 
-AC2 - desenvolva uma funcao que calcule o salario liquido de um funcionario com a reducao do imposto de renda
+AC2 (Exerc: 1) - revisite a AC1
+AC2 (Exerc: 2) - desenvolva uma funcao que calcule o salario liquido de um funcionario com a reducao do imposto de renda
 """
 def eq_seg_grau(a, b, c):
     x1 = (-b + (b**2 - 4*a*c)**(0.5)) / (2*a)
