@@ -21,7 +21,7 @@ def calcula_salario(valor_hora, num_horas, irpf = 0.275):
     return salario
 
 def main():
-    print('O salario liquido do funcionario e de R$', calcula_salario(100, 100))
+    print('O salario liquido do funcionario e de R$', calcula_salario(15, 40))
     eq_seg_grau(1, -6, 8)
     bissexto(2012)
 
