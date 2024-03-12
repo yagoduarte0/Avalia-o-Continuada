@@ -10,11 +10,11 @@ AC2 (Exerc: 2) - desenvolva uma funcao que calcule o salario liquido de um funci
 def eq_seg_grau(a, b, c):
     x1 = (-b + (b**2 - 4*a*c)**(0.5)) / (2*a)
     x2 = (-b - (b**2 - 4*a*c)**(0.5)) / (2*a)
-    print("O valor da primeira raiz e igual a: ", x1)
-    print("O valor da segunda raiz e igual a: ", x2)
+    return x1, x2
 
 def bissexto(ano):
-    print(ano %4 == 0 and not ano %100 == 0 or ano %400 == 0)
+    sexto = ano %4 == 0 and not ano %100 == 0 or ano %400 == 0
+    return sexto
     
 def calcula_salario(valor_hora, num_horas, irpf = 0.275):
     salario = (valor_hora * num_horas) - valor_hora * num_horas * irpf
@@ -22,7 +22,7 @@ def calcula_salario(valor_hora, num_horas, irpf = 0.275):
 
 def main():
     print('O salario liquido do funcionario e de R$', calcula_salario(15, 40))
-    eq_seg_grau(1, -6, 8)
-    bissexto(2012)
+    print("As raízes são: ", eq_seg_grau(1, -6, 8))
+    print(bissexto(2012))
 
 main()
