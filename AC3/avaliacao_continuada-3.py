@@ -35,22 +35,38 @@ def dia_semana(num):
     elif num == 7:
         return "Sábado"
     else:
-        return "String vazia!"
-    
-def calculadora_simples():
+        return " "
+
+def soma(n1, n2):
+    operacao_soma = (n1 + n2)
+    return operacao_soma
+
+def subtracao(n1, n2):
+    operacao_sub = (n1 - n2)
+    return operacao_sub
+
+def multiplicacao(n1, n2):
+    operacao_mult = (n1 * n2)
+    return operacao_mult
+
+def divisao(n1, n2):
+    operacao_div = (n1 / n2)
+    return operacao_div
+
+def cli():
     n1 = float(input("Informe um número: "))
     n2 = float(input("Informe outro número: "))
     operacao = str(input("Informe a operação: "))
     if operacao == "soma":
-        print(n1 + n2)
+        print(soma(n1, n2))
     elif operacao == "subtracao":
-        print(n1 - n2)
+        print(subtracao(n1, n2))
     elif operacao == "multiplicação":
-        print(n1 * n2)
+        print(multiplicacao(n1, n2))
     elif operacao == "divisão":
-        print(n1 / n2)
+        print(divisao(n1, n2))
     else:
-        print("Operação inválida!")
+        print("Operacao Invalida!")
 
 def main():
     print(determina_tipo_triangulo(4, 4, 4))
@@ -63,6 +79,6 @@ def main():
     print(dia_semana(7))
     print(dia_semana(9))
 
-    calculadora_simples()
+    cli()
 
 main()
